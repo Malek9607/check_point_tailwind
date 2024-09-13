@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog en ligne</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Section d'en-tête -->
+  <header class="bg-blue-600 text-white p-4 flex justify-between items-center">
+    <div class="text-2xl font-bold">
+      MyBlog
+    </div>
+    <nav>
+      <ul class="flex space-x-4">
+        <li><a href="#" class="hover:underline">Home</a></li>
+        <li><a href="#" class="hover:underline">Articles</a></li>
+        <li><a href="#" class="hover:underline">Categories</a></li>
+        <li><a href="#" class="hover:underline">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Section des articles en vedette -->
+  <section class="p-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+    <div class="bg-white shadow-md rounded-lg overflow-hidden">
+      <img src="image1.jpg" alt="Article 1" class="w-full h-48 object-cover">
+      <div class="p-4">
+        <h2 class="text-xl font-bold mb-2">Titre de l'article 1</h2>
+        <p class="text-gray-700">Extrait de l'article 1...</p>
+      </div>
+    </div>
+    <div class="bg-white shadow-md rounded-lg overflow-hidden">
+      <img src="image2.jpg" alt="Article 2" class="w-full h-48 object-cover">
+      <div class="p-4">
+        <h2 class="text-xl font-bold mb-2">Titre de l'article 2</h2>
+        <p class="text-gray-700">Extrait de l'article 2...</p>
+      </div>
+    </div>
+    <div class="bg-white shadow-md rounded-lg overflow-hidden">
+      <img src="image3.jpg" alt="Article 3" class="w-full h-48 object-cover">
+      <div class="p-4">
+        <h2 class="text-xl font-bold mb-2">Titre de l'article 3</h2>
+        <p class="text-gray-700">Extrait de l'article 3...</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section des catégories -->
+  <section class="p-8 bg-gray-100">
+    <h2 class="text-2xl font-bold mb-4">Catégories</h2>
+    <div class="flex space-x-4">
+      <span class="bg-blue-500 text-white px-3 py-1 rounded-full">Tech</span>
+      <span class="bg-green-500 text-white px-3 py-1 rounded-full">Lifestyle</span>
+      <span class="bg-purple-500 text-white px-3 py-1 rounded-full">Travel</span>
+    </div>
+  </section>
+
+  <!-- Section Articles récents -->
+  <section class="p-8">
+    <h2 class="text-2xl font-bold mb-4">Articles récents</h2>
+    <ul>
+      <li class="mb-2">
+        <a href="#" class="text-blue-600 hover:underline">Article récent 1</a>
+        <span class="text-gray-500">- 12 septembre 2024</span>
+      </li>
+      <li class="mb-2">
+        <a href="#" class="text-blue-600 hover:underline">Article récent 2</a>
+        <span class="text-gray-500">- 10 septembre 2024</span>
+      </li>
+      <li class="mb-2">
+        <a href="#" class="text-blue-600 hover:underline">Article récent 3</a>
+        <span class="text-gray-500">- 8 septembre 2024</span>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Formulaire d'inscription à la newsletter -->
+  <section class="p-8 bg-blue-100">
+    <h2 class="text-2xl font-bold mb-4">Inscription à la newsletter</h2>
+    <form class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
+      <input type="email" placeholder="Votre email" class="p-3 rounded-lg border border-gray-300 w-full md:w-2/3">
+      <button class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">
+        S'inscrire
+      </button>
+    </form>
+  </section>
+
+  <!-- Pied de page -->
+  <footer class="bg-gray-800 text-white p-8">
+    <div class="flex justify-between items-center">
+      <div>&copy; 2024 MyBlog. Tous droits réservés.</div>
+      <div class="flex space-x-4">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
